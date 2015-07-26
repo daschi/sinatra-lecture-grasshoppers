@@ -1,0 +1,16 @@
+the list of coaches is:
+
+<ul>
+	<!-- does NOT show & used for logic -->
+	<!-- can use in logic but not for show -->
+	<!-- <% @grasshoppers %> -->
+
+	<!-- shows on the page (uses equal sign) -->
+	<!-- cannot show local variables only instance -->
+	<% @coaches.each do |coach| %>
+		<li><%= coach %></li>
+	<% end %>
+
+	<!-- <%= @coaches %> -->
+
+</ul>
