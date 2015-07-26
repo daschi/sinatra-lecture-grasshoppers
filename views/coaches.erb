@@ -1,16 +1,16 @@
-the list of coaches is:
+The list of coaches is:
+
+<a href="/coaches/new">Add a coach!</a>
 
 <ul>
+	<% @coaches.each do |coach| %>
+		<li><a href="/coaches/<%= coach %>"><%= coach %></a></li>
+	<% end %>
+</ul>
+
 	<!-- does NOT show & used for logic -->
 	<!-- can use in logic but not for show -->
 	<!-- <% @grasshoppers %> -->
 
 	<!-- shows on the page (uses equal sign) -->
 	<!-- cannot show local variables only instance -->
-	<% @coaches.each do |coach| %>
-		<li><%= coach %></li>
-	<% end %>
-
-	<!-- <%= @coaches %> -->
-
-</ul>

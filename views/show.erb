@@ -1,0 +1,11 @@
+This is the coach page for: <%= @name %>
+
+<% if @name == 'John' %>
+	<h3>Hey, that's this guy here!</h3>
+<% end %>
+
+<br>
+
+<form method='POST' action='/coaches/delete/<%= @name %>'>
+	<input type='submit' value='Delete'>
+</form>
